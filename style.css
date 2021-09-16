@@ -42,7 +42,7 @@ h2 {
 }
 
 .left {
-  background-color: rgba(255, 229, 59, 0.6);
+  background-color: rgba(87, 204, 153, 0.6);
   width: 50%;
   text-align: center;
 }
@@ -76,6 +76,24 @@ h2 {
   font-size: 2rem;
 }
 
+.dice-container {
+  position: absolute;
+  left: 50%;
+  bottom: 35%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+}
+
+.dice-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
 /* Buttons */
 
 .buttons {
@@ -95,6 +113,51 @@ h2 {
   border-radius: 25px;
   border: none;
   opacity: 0.8;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.show-info .btn {
+  background-color: #ff2525;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Show info */
+.show-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background: #fff;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
 }
 
 @media screen and (max-width: 1100px) {

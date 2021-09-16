@@ -30,25 +30,40 @@
           <i class="far fa-pause-circle"></i> Hold
         </button>
       </div>
+      <div class="dice-container">
+        <img src="" alt="" class="hidden" />
+      </div>
       <div class="left">
         <h1>Player 1</h1>
         <br />
-        <p class="score">0</p>
+        <p class="score score-p1">0</p>
         <div class="current">
           <h2>CURRENT</h2>
-          <p class="current-score">0</p>
+          <p class="current-score current-score-p1">0</p>
         </div>
       </div>
       <div class="right">
         <h1>Player 2</h1>
         <br />
-        <p class="score">0</p>
+        <p class="score score-p2">0</p>
         <div class="current">
           <h2>CURRENT</h2>
-          <p class="current-score">0</p>
+          <p class="current-score current-score-p2">0</p>
         </div>
       </div>
     </div>
+
+    <div class="show-info hidden">
+      <h1 class="info-header"></h1>
+      <p class="info"></p>
+      <button class="btn new-game">
+        <i class="fas fa-sync-alt"></i> New Game
+      </button>
+
+      <button class="btn ok hidden"><i class="fas fa-thumbs-up"></i> Ok</button>
+    </div>
+
+    <div class="overlay hidden"></div>
 
     <script src="script.js"></script>
   </body>
